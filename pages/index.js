@@ -23,7 +23,7 @@ export default function Home() {
   return (
 
     <main
-      className={`flex min-h-screen flex-col items-center justify-between bg-cover bg-center p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center justify-between bg-cover bg-center p-4 lg:p-24 ${inter.className}`}
     >
         <BackgroundSlideshow />
       <div className="z-10 w-full items-center justify-between font-mono text-sm lg:flex">
@@ -31,7 +31,7 @@ export default function Home() {
        
       </div>
 
-      <div className="z-10  w-full items-center justify-between font-mono text-sm lg:flex-row fixed bottom-0 px-16 ">
+      <div className="z-10  w-full items-center justify-between font-mono text-sm lg:flex-row fixed bottom-0  px-4 lg:px-16 ">
       <div className="flex h-32 w-full items-end justify-left  lg:static lg:h-auto lg:w-auto lg:bg-none">
         <a
           href="https://vimeo.com/889264060?share=copy"
