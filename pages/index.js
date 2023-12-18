@@ -1,13 +1,31 @@
+'use client'
+
+
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-
+import BackgroundSlideshow from '../components/Slideshow/BackgroundSlideshow'
+/*
+import image1 from '../public/background.jpg'
+import image2 from '../public/background1.jpg'
+import image3 from '../public/background2.jpg'
+import image4 from '../public/background3.jpg'
+*/
+const image1 =  '/background.jpg';
+const image2 =  '/background1.jpg';
+const image3 =  '/background2.jpg';
+const image4 =  '/background3.jpg';
+/*
+  style={{backgroundImage: `url("/background.png")`}} */
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
+
     <main
       className={`flex min-h-screen flex-col items-center justify-between bg-cover bg-center p-24 ${inter.className}`}
-      style={{backgroundImage: `url("/background.png")`}}>
+    >
+        <BackgroundSlideshow />
       <div className="z-10 w-full items-center justify-between font-mono text-sm lg:flex">
 <img src="/logo_web.png"/>
        
@@ -36,9 +54,9 @@ export default function Home() {
 
 
 
-<div class="flow-root mb-8 ">  
-    <p class="float-left text-white"><a href="mailto:onur.tunckan@pulpstudio.co">Hello!</a></p> 
-    <p class="float-right text-white">Fine Art Services</p>
+<div className="flow-root mb-8 ">  
+    <p className="float-left text-white"><a href="mailto:onur.tunckan@pulpstudio.co">Hello!</a></p> 
+    <p className="float-right text-white">Fine Art Services</p>
 </div>
 
 </div>
